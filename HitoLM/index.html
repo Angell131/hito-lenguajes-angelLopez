@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="UTF-8">
+  	<meta name="description" content="Facturación de artículos de informática">
+  	<meta name="keywords" content="Facturas,ordenadores,periféricos">
+
+	<title>Consulta de facturas</title>
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" href="css/estilo.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+</head>
+<body>
+	<header>
+		<h2>Consulta tus Alumnos</h2>
+	</header>
+	<main>
+        <div class="input-field col s12">
+            <h4>
+                <label for="lista">Selecciona alumno para consultar: </label>
+                <select id="lista"  onchange="leerFactura();"></select>		
+            </h4>
+        </div>
+	
+	<fieldset>
+		<legend id="leyenda">Factura: </legend>
+
+		<div id="datosFactura"></div>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Alumno</th>
+					<th class='dere'>Lenguaje de Marcas</th>
+					<th class='dere'>Bases de Datos</th>
+					<th class='dere'>Formación y Orientacion Laboral</th>
+					<th class='dere'>Pogramación</th>
+					<th class='dere'>Sistemas informáticos</th>
+					<th class='dere'>Entornos de Desarrollo</th>
+					<th class='dere'>Media</th>
+				</tr>	
+			</thead>
+			<tbody id="detalle">
+			</tbody>	
+		</table>
+	</fieldset>
+	</main>
+	<footer>
+		
+	</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+</body>
+</html>
